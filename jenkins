@@ -17,8 +17,7 @@ stage('Playbook to Build code')
 {
 
 steps{
-ansiblePlaybook credentialsId: 'ansiblecredentials', disableHostKeyChecking: true, installation: 'myansible', inventory: 'dev.inv', playbook: 'project-install.yaml'
-
+ansiblePlaybook credentialsId: 'ansiblecreditinals', disableHostKeyChecking: true, installation: 'myansible', inventory: 'dev.in', playbook: 'project-install.yaml'
 }
 
 }
@@ -28,8 +27,7 @@ stage('Playbook to deploy code')
 {
 
 steps{
-ansiblePlaybook credentialsId: 'ansiblecredentials', disableHostKeyChecking: true, installation: 'myansible', inventory: 'dev.inv', playbook: 'deployment.yaml'
-
+ansiblePlaybook credentialsId: 'ansiblecreditinals', disableHostKeyChecking: true, installation: 'myansible', inventory: 'dev.in', playbook: 'deployment.yaml'
 }
 
 }
